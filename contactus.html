@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+ 
+<body>
+  
+  <script>
+      let x = new Date();
+      document.body.innerHTML = "<h1>Date/Time: " + x + "</h1>"
+  </script>
+
+<head>
+	<title>Menhir Sports</title>
+	<meta name="description" content="Menhir Sport">
+	<meta name="keywords" content="Menhir Sport, Outdoor sports,  ">
+	<style type="text/css">
+	@font-face {
+font-family: "myfont";
+  src: url("Monthoers.woff") format('woff');
+}
+		#main-header{
+			text-align: center;
+			background-color:#244f7b;
+			color: white;
+			padding: 10px;
+			font-family: myfont; 
+			font-size: 50px;
+		}
+
+		#main-footer{
+			text-align: center;
+			font-size: 10px;
+			font-family: Eras ITC;
+
+		}
+
+	</style>
+<style>
+      button {
+        display: inline-block;
+        background-color: #61b3cc;
+        padding: 10px;
+        width: 421px;
+        color: #244f7b;
+        text-align: center;
+	font-size: 25px;
+	font-family: Eras ITC;
+	font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+	
+
+	<header id="main-header">
+		<h1>Menhir Sports</h1>
+
+	<div class="header">
+		<a href="file:///C:/Users/bethm/Desktop/21012040%20-%20Assignment%202/MenhirSport.html"><img src="Ourdoor-Sports-Logo.png" height="150px" width="150px" alt="Sports logo"> </a>
+	</div>
+	</header>
+<button onclick="document.location='file:///C:/Users/bethm/Desktop/21012040%20-%20Assignment%202/Activities%20and%20equipment%20hire.html'">Activities and equipment hire</button> <button onclick="document.location='file:///C:/Users/bethm/Desktop/21012040%20-%20Assignment%202/About.html'">About</button> <button onclick="document.location='file:///C:/Users/bethm/Desktop/21012040%20-%20Assignment%202/contactus.html'">Contact us</button> 
+    <h1 style="font-family: Eras ITC; color:#244f7b"> CONTACT </h1>
+      <p style = "font-family:Eras ITC; font-size:30px; color:#61b3cc">
+We are based in Nethy Bridge but have activity centres throughout the Cairngorms National Park and run outdoor activities all over the Scottish Highlands.
+
+      </p>
+
+<p style = "font-family:Eras ITC; font-size:30px; color:#61b3cc">
+
+For information about activities, activity packages and general enquiries please email: <a href=mailto:"info@menhirsports.com">info@menhirsports.com</a>
+
+      </p>
+<p style = "font-family:Eras ITC; font-size:30px; color:#61b3cc">
+
+For information about hiring out equipment please email: <a href=mailto:“hire@menhirsports.com”>hire@menhirsports.com</a>
+
+
+      </p>
+<p style = "font-family:Eras ITC; font-size:30px; color:#61b3cc">
+
+
+For information about our educational packages please email: <a href=mailto:"education@menhirsports.com">education@menhirsports.com</a>
+
+      </p>
+   
+
+<style>
+form {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: Eras ITC;
+    color:#61b3cc
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Eras ITC;
+    line-height: 1.5;
+    margin-bottom: 15px;
+ 
+}
+
+input[type="submit"] {
+    background-color: #244f7b;
+    color: white;
+    padding: 10px 20px;
+    font-family:Eras ITC;
+    font-size: 20px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #244f7b;
+}
+
+</style>
+
+<body>
+<form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" value="Send">
+</form>
+
+<script>
+function validateForm() {
+    var name = document.forms["contactForm"]["name"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var message = document.forms["contactForm"]["message"].value;
+    var error = "";
+
+    if (name == "") {
+        error += "You must enter your name.\n";
+    }
+
+    if (email == "") {
+        error += "Please enter your email address.\n";
+    } else if (!validateEmail(email)) {
+        error += "Please enter a valid email address.\n";
+    }
+
+    if (message == "") {
+        error += "Please enter the message you'd like to send.\n";
+    }
+
+    if (error != "") {
+        alert(error);
+        return false;
+    }
+}
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+</script>
+</body>
+   
+
+	<footer id="main-footer">
+		<p>Copyright &copy; 2023, Menhir Sports  </p>	
+	</footer>
+</body>
+</html>
+
